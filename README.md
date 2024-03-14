@@ -145,6 +145,7 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 | -------------------------------------------- | --- | --------- | ---- | ---------- | ------- |
 | SEA-LION 7B Instruct (Base)                  |     |           |      |            |         |
 | SEA-LION 7B Instruct (4-Bit, 128 group size) |     |           |      |            |         |
+
 Although the evaluations were run with the same n-shot values as Hugging Face's LLM Leaderboard, the evaluations were run using version 0.4.1 of the [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/tree/v0.4.1) by EleutherAI.
 
 # Work In Progress (WIP)
