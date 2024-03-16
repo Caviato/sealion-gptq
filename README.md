@@ -42,10 +42,6 @@ seed = 0
 random.seed(seed)
 
 paths = []
-for lang in lang_list:
-    path = "path/to/data"
-    paths.append(path)
-
 data = load_dataset("json", data_files=paths, cache_dir=scratch_dir, split="train")
 
 quantize_dataset = []
