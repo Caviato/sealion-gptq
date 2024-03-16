@@ -105,7 +105,7 @@ generation_kwargs = {
         "top_k": 50,
         "top_p": 0.7,
         "repetition_penalty": 1.2,
-        "eos_token_id" : tokenizer.eos.token_id
+        "eos_token_id": tokenizer.eos.token_id
         }
 ```
 
