@@ -143,10 +143,17 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 
 | Model                                        | ARC | HellaSwag | MMLU | TruthfulQA | Average |
 | -------------------------------------------- | --- | --------- | ---- | ---------- | ------- |
-| SEA-LION 7B Instruct (Base)                  |     |           |      |            |         |
-| SEA-LION 7B Instruct (4-Bit, 128 group size) |     |           |      |            |         |
+| SEA-LION 7B Instruct (Base)                  |   40.78  |     68.20     |   27.12   |    36.29     |    43.10     |
+| SEA-LION 7B Instruct (4-Bit, 128 group size) |   39.93  |     67.32     |   27.11   |    36.32     |    42.67     |
 
 Although the evaluations were run with the same n-shot values as Hugging Face's LLM Leaderboard, the evaluations were run using version 0.4.1 of the [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/tree/v0.4.1) by EleutherAI.
+
+| Tasks | n-shots |
+|-------|---------|
+| ARC (arc_challenge) | 25 |
+| HellaSwag (hellaswag) | 10 |
+| MMLU (mmlu) | 5 |
+| TruthfulQA (truthfulqa_mc2) | 0 |
 
 # Work In Progress (WIP)
 
