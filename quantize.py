@@ -29,6 +29,7 @@ chunk_size = 100
 tokenizer = AutoTokenizer.from_pretrained(
         base_model_path, 
         trust_remote_code=True,
+        device_map = "cuda"
         )
 
 quantize_config = BaseQuantizeConfig(
@@ -43,7 +44,7 @@ model = AutoGPTQForCausalLM.from_pretrained(
         )
 
 paths = []
-data = load_dataset("json", data_files=paths, cache_dir=scratch_dir, split="train")
+data = load_dataset("json", data_files=paths, split="train")
 
 for _ in range(n_samples):
     i = random.randint(0, data.num_rows - chunk_size - 1)

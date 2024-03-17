@@ -79,7 +79,7 @@ chunk_size = 100 # arbitrary value, to make sure there is enough data to reach a
 # ...
 
 paths = []
-data = load_dataset("json", data_files=paths, cache_dir=scratch_dir, split="train")
+data = load_dataset("json", data_files=paths, split="train")
 
 for _ in range(n_samples):
     i = random.randint(0, data.num_rows - chunk_size - 1)
@@ -125,6 +125,7 @@ Create your tokenizer, quantization config and model:
 
 from transformers import AutoTokenizer
 from auto_gptq import AutoGPTQForCausalLM, BaseQuantizeConfig
+import torch
 
 # ...
 
