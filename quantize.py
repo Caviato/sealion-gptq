@@ -29,6 +29,7 @@ chunk_size = 100
 tokenizer = AutoTokenizer.from_pretrained(
         base_model_path, 
         trust_remote_code=True,
+        device_map = "cuda"
         )
 
 quantize_config = BaseQuantizeConfig(
