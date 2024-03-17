@@ -42,7 +42,7 @@ seed = 0
 random.seed(seed)
 
 paths = []
-data = load_dataset("json", data_files=paths, cache_dir=scratch_dir, split="train")
+data = load_dataset("json", data_files=paths, split="train")
 
 quantize_dataset = []
 n_samples = 128 # from paper 
