@@ -74,6 +74,7 @@ Create your tokenizer, quantization config and model:
 ```python
 from transformers import AutoTokenizer
 from auto_gptq import AutoGPTQForCausalLM, BaseQuantizeConfig
+import torch
 
 tokenizer = AutoTokenizer.from_pretrained( # will be loaded to GPU
         "path/to/model/dir",
