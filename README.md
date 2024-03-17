@@ -88,6 +88,8 @@ for _ in range(n_samples):
     inp = token_data.input_ids[:, :seqlen]
     attention_mask = torch.ones_like(inp)
     quantize_dataset.append({"input_ids": inp, "attention_mask": attention_mask})
+
+# ...
 ```
 
 Finally, we can quantize and save our model.
@@ -157,6 +159,9 @@ generation_kwargs = {
         "repetition_penalty": 1.2,
         "eos_token_id": tokenizer.eos.token_id
         }
+
+# ...
+
 ```
 
 Create your prompt:
