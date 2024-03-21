@@ -8,7 +8,7 @@ The 4-bit, 128 group size quantized model can be found [here]().
 
 ## 2.Quantization
 
-The main work is done by the [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) library. As of March 2024 however, the library does not directly support GPTQ quantization for the MPT architecture which SEA-LION is based on. Instead, a specific fork of the library is used, created by [LaaZa](https://github.com/LaaZa). For convenience, we have forked Laaza's patch, which can be found [here](https://github.com/Caviato/AutoGPTQ).
+The main work is done by the [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) library. As of March 2024 however, the library does not directly support GPTQ quantization for the MPT architecture which SEA-LION is based on. Instead, a specific fork of the library is used (**MPT branch**), created by [LaaZa](https://github.com/LaaZa). For convenience, we have forked Laaza's patch, which can be found [here](https://github.com/caviato/AutoGPTQ/tree/MPT).
 
 In the `quantize.py` file, please change the value of the two following variables to the appropriate path for your system.
 
