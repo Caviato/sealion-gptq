@@ -4,7 +4,7 @@
 
 This repository provides a guide and a collection of scripts to help with the quantization and inference of the [SEA-LION 7B Instruct Model](https://huggingface.co/aisingapore/sea-lion-7b-instruct) instruct model developed by AI Singapore. The goal is to further democratise access to SEA-LION by allowing it to run on consumer grade hardware (e.g. common GPU like Nvidia GTX and RTX series) thanks to quantization.
 
-The 4-bit, 128 group size quantized model can be found [here]().
+The 4-bit, 128 group size quantized model can be found [here](https://huggingface.co/aisingapore/sea-lion-7b-instruct-gptq).
 
 ## 2.Quantization
 
